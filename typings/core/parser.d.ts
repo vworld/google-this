@@ -105,6 +105,12 @@ declare class Parser {
         title: string;
         thumbnail: string;
     }[];
+    get local_business(): {
+        name: string;
+        address: string;
+        phone: string;
+        website: string;
+    };
     #private;
 }
 import Cheerio = require("cheerio");
