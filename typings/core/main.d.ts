@@ -20,6 +20,8 @@ export function getTopNews(language?: string, region?: string): Promise<{
  *
  * @param {string} query - Search query
  * @param {object} [options] Search options
+ * @param {boolean} getHtml
+ * @param {object} fetchConfigs
  * @param {boolean} [options.ris] - Use reverse image search
  * @param {boolean} [options.safe] - Safe search
  * @param {number} [options.page] - Pagination
@@ -35,12 +37,7 @@ export function getTopNews(language?: string, region?: string): Promise<{
  * location?: { title: string; distance: string; map: string; };
  * time?: { date: string; hours: string; }; }>}
  */
-export function search(query: string, options?: {
-    ris?: boolean;
-    safe?: boolean;
-    page?: number;
-    additional_params?: object;
-}): Promise<{
+export function search(query: string, options?: object, getHtml?: boolean, fetchConfigs?: object): Promise<{
     results: {
         title: string;
         description: string;

@@ -68,4 +68,8 @@ export namespace SELECTORS {
     const STORY_TITLE: string;
     const STORY_IMG: string;
     const STORY_TIME: string;
+    const LOCAL_BUSINESS_NAME: string;
+    const LOCAL_BUSINESS_WEBSITE: string;
+    const LOCAL_BUSINESS_PHONE: string;
+    const LOCAL_BUSINESS_ADDRESS: string;
 }
